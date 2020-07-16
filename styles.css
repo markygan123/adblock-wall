@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #e6e6e6;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 1050px;
+    height: 650px;
+}
+
+.adblock-overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+
+    display: flex;
+    place-items: center;
+    position: absolute;
+    top: -50px;
+    z-index: 9999;
+    animation: 0.5s fadeIn;
+}
+
+.adblock-wall {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+}
+
+.adblock-wall p {
+    margin-left: 13px;
+    margin-bottom: 40px;
+    max-width: 97%;
+}
+
+#continue,
+#subscribe {
+    padding: 20px;
+    border: 5px solid #fd722d;
+    background-color: #ffffff;
+    outline: 0;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 20px;
+    color: #fd722d;
+    transition: 0.2s all ease;
+}
+
+#continue:hover,
+#subscribe:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+#continue {
+    margin-right: 30px;
+}
+
+#subscribe {
+    background-color: #fd722d;
+    color: #ffffff;
+}
+
+.fade-out {
+    animation: fadeOut ease 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+
+.article {
+    max-width: 1050px;
+    margin: 50px auto;
+    letter-spacing: 0.05rem;
+}
+
+.article-image,
+h1 {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
