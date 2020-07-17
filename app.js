@@ -5,17 +5,14 @@ const body = document.querySelector("body");
 
 function adblockPopUp() {
     continueWithAds.addEventListener("click", function() {
-        overlay.style.display = "none";
+        overlay.classList.toggle("fade-out");
         body.style.overflow = "visible";
     });
 
     subscribe.addEventListener("click", function() {
-        overlay.style.display = "none";
+        overlay.classList.toggle("fade-out");
+        body.style.overflow = "visible";
     });
 }
 
-window.onload = () => {
-    setTimeout(() => {
-        adblockPopUp();
-    }, 3000);
-}
+adblockPopUp();
