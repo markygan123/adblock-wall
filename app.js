@@ -1,6 +1,7 @@
 const continueWithAds = document.getElementById("continue");
 const subscribe = document.getElementById("subscribe");
 const overlay = document.querySelector(".adblock-overlay");
+const body = document.querySelector("body");
 
 function adblockPopUp() {
     continueWithAds.addEventListener("click", function() {
